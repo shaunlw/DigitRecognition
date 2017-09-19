@@ -47,3 +47,4 @@ def plot_example():
     for i in range(25):
         img = X_train[y_train==7][i].reshape(28,28)
         ax[i].imshow(img,cmap='Greys',interpolation='nearest')
+    plt.show()

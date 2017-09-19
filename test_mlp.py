@@ -32,6 +32,7 @@ plt.ylim([0,1000])
 plt.xlim([0,5000])
 plt.xlabel('number of run')
 plt.ylabel('cost')
+plt.show()
 
 y_train_pred = nn.predict(X_train)
 acc = np.sum(y_train == y_train_pred, axis=0) / X_train.shape[0]

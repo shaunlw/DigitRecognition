@@ -30,6 +30,7 @@ import matplotlib.pyplot as plt
 plt.plot(range(len(nn.cost_)),nn.cost_)
 plt.ylim([0,1000])
 plt.xlim([0,5000])
+plt.show()
 
 y_train_pred = nn.predict(X_train)
 acc = np.sum(y_train == y_train_pred, axis=0) / X_train.shape[0]
