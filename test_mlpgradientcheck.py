@@ -10,7 +10,7 @@ from cls_mlpgradientcheck import MLPGradientCheck
 import data_mungle as dm
 import numpy as np
 
-X_train, X_test, y_train, y_test = dm.get_train_test(train_size=5,test_size=5)
+X_train, X_test, y_train, y_test = dm.get_train_test()
 
 nn = MLPGradientCheck(n_output=10,
                   n_features=X_train.shape[1],

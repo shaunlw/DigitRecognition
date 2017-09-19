@@ -22,7 +22,7 @@ def load_mnist(path, kind='train'):
     return imgs,labels
 
 def get_train_test():
-    cur_path = os.path.join('/Users/xiangliwang/Python/ml/Raschka/code/digit.recognition','mnist')
+    cur_path = os.path.join('./','mnist')
     print(cur_path)
     X_train, y_train = load_mnist(cur_path,kind='train')
     print('row: %d, col: %d' % (X_train.shape[0], X_train.shape[1]))
